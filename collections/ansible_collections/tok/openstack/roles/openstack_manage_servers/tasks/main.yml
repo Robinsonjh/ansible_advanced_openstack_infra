@@ -11,7 +11,7 @@
     wait: no
     nics:
       - net-name: "{{ __server.nic }}"
-    meta: "group={{ __server.group }}, deployment_name={{ __server.deployment }}"
+    meta: "group={{ __server.group }},deployment_name={{ __server.deployment }}"
     userdata: |
       #!/bin/bash
       curl -o /tmp/openstack.pub http://www.opentlc.com/download/ansible_bootcamp/openstack_keys/openstack.pub
